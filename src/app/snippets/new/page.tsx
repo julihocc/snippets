@@ -1,6 +1,5 @@
-import {redirect} from 'next/navigation';
+import { redirect } from "next/navigation";
 import { db } from "@/db";
-import { log } from 'console';
 
 export default function SnippetCreatePage() {
   async function createSnippet(formData: FormData) {
@@ -20,7 +19,7 @@ export default function SnippetCreatePage() {
 
     console.log(snippet);
 
-    redirect('/');
+    redirect("/");
   }
 
   return (
